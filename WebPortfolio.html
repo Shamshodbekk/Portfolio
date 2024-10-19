@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Sayti</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+             background: #555;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #555;
+        }
+
+        section {
+          border: 1px;  #4466;
+            padding: 20px;
+            margin: 20px;
+            background: #4463;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .project {
+          background: #4463;
+            border: 1px;  #fff;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+        }
+    </style>
+    <script>
+        const phrases = [
+            "Assalomu-Alaykum",
+            "Ushbu Web-Sahifa",
+            "Shamshodbekning",
+            "Portfolio Sayti",
+            "Siz Bu Yerda",
+            "Shamshodbekning",
+            "Loyihalari Bilan",
+            "Tanishishingiz Mumkun"
+        ];
+
+        let index = 0;
+
+        function changeText() {
+            document.getElementById('dynamic-title').innerText = phrases[index];
+            index = (index + 1) % phrases.length;
+        }
+
+        setInterval(changeText, 3000);
+    </script>
+</head>
+<body onload="changeText()">
+    <header>
+        <h1 id="dynamic-title">Assalomu-Alaykum</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Haqida</a></li>
+                <li><a href="#projects">Loyihalar</a></li>
+                <li><a href="#contact">Aloqa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Haqida</h2>
+        <p>Mening ismim shamshodbek men web dasturchiaman.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Loyihalar</h2>
+        <div class="project">
+            <h3>Loyiha 1</h3>
+        <img src="project-image-url.jpg" alt="Loihaning Rasimi" style="width: 300px;">
+        <h3>Loihaning Nomi</h3>
+        <p>Loihaning Haqida: Bu loyiha haqida qisqacha ma'lumot.</p>
+        <a href="project-link-url" class="project-link">Loihaning Ko'rish</a>
+        </div>
+        <div class="project">
+            <h3>Loyiha 2</h3>
+        <img src="project-image-url.jpg" alt="Loihaning Rasimi" style="width: 300px;">
+        <h3>Loihaning Nomi</h3>
+        <p>Loihaning Haqida: Bu loyiha haqida qisqacha ma'lumot.</p>
+        <a href="project-link-url" class="project-link">Loihaning Ko'rish</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Aloqa</h2>
+        <form>
+<li>Telegram Aloqa: <a href="https://t.me/shamshodbekh"> Telegram User</a></li>
+<li>Telefon Raqam: <a href="tel:+998507591455">Qo'ng'iroq qilish </a></li>
+<li>Bot Orqali Aloqa: <a href="https://t.me/shamshodbek_aloqa_bot">Aloqa Bot</a></li>
+<li>Email Orqali Aloqa: <a href="mailto:your_email@example.com">Email manzil</a></li>
+        </form>
+    </section>
+
+    <footer>
+<p>&copy; 2024 | 2025 Barcha Huquqlar Himoyalangan.</p>
+    </footer>
+</body>
+</html>
